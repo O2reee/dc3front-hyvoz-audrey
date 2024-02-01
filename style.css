@@ -1,0 +1,37 @@
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.hovered {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    height: 100%; width: 100%;
+    opacity: 0; transition: all .3s;
+    background-color: green;   
+}
+
+.container:hover .hovered {
+    opacity: 1;
+}
+
+.hovered span {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    
+}
+
+.img_size{
+	width: 300px;
+	height: 300px;
+}
+
+.position_img{
+	flex-direction: column;
+	columns: 4;
+}
